@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ThemeToggler } from '@/components/ThemeToggler';
 import SearchInput from "./SearchInput";
+import GenreDropdown from "./GenreDropdown";
 
 function Header() {
     return (
@@ -17,7 +18,7 @@ function Header() {
             </Link>
 
             <div className="flex items-center gap-2">
-                <div className=""></div>
+                <GenreDropdown />
 
                 <SearchInput />
 
