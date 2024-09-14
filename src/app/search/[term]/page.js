@@ -2,6 +2,15 @@ import MoviesCarousel from "@/components/MoviesCarousel";
 import { getPopularMovies, getSearchMovies } from "@/lib/getMovies";
 import { notFound } from "next/navigation";
 
+export const generateMetadata = async ({ params: { term } }) => {
+    const termToUse = decodeURI(term);
+
+    return {
+        title: `${termToUse}`,
+        description: `Search results for ${termToUse}`,
+    };
+};
+
 async function Search({ params: { term } }) {
     if(!term) {
         return notFound();

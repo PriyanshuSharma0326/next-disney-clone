@@ -27,7 +27,7 @@ function MoviesCarousel({ movies, title, isVertical }) {
 
                                         <hr className="mb-3" />
 
-                                        <p>{movie.overview}</p>
+                                        <p className="line-clamp-3">{movie.overview}</p>
                                     </div>
                                 </div>
                             )

@@ -5,7 +5,7 @@ import Link from "next/link";
 function MovieCard({ movie }) {
     return (
         <Link href={`/movie/${movie.id}`} className="relative flex-shrink-0 cursor-pointer transform hover:scale-105 transition duration-200 ease-out hover:drop-shadow-lg">
-            <div className="absolute inset-0 bg-gradient-to-b from-gray-200/0 via-gray-900/10 to-gray-300 dark:to-[#1A1C29] z-10"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-gray-200/0 via-gray-900/10 to-[#1A1C29] z-10"></div>
 
             <p className="absolute z-20 bottom-5 left-5">{movie.title}</p>
 

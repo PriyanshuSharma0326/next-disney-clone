@@ -2,6 +2,15 @@ import MoviesCarousel from "@/components/MoviesCarousel";
 import { getDiscoverMovies } from "@/lib/getMovies";
 import { notFound } from "next/navigation";
 
+export const generateMetadata = async ({ params: { id }, searchParams }) => {
+    const genre = decodeURI(searchParams.genre);
+
+    return {
+        title: `#${id} ${genre}`,
+        description: `Genre results for ${genre}`,
+    };
+};
+
 async function Genre({ params: { id }, searchParams }) {
     if(!id) {
         return notFound();

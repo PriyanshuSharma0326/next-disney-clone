@@ -4,16 +4,19 @@ import { ThemeProvider } from "@/components/theme-provider"
 
 export const metadata = {
     title: {
-        default: 'Disney+ Hotstar',
-        template: '%s | Powered by Next.js',
+        default: 'Disney Clone | Powered by Next.js',
+        template: '%s | Disney Clone',
     },
-    description: 'Next.js tutorial',
+    description: 'This is a disney clone based on Next.js',
+    icons: {
+        icon: '/favicon.jpeg'
+    }
 }
 
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body className='bg-[#F5F5F5] dark:bg-[#1A1C29]'>
+            <body className='bg-[#1A1C29]'>
                 <ThemeProvider
                     attribute="class"
                     defaultTheme="system"
@@ -21,6 +24,7 @@ export default function RootLayout({ children }) {
                     disableTransitionOnChange
                 >
                     <Header />
+
                     {children}
                 </ThemeProvider>
             </body>

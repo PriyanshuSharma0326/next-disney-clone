@@ -16,7 +16,6 @@ async function Home() {
                 <MoviesCarousel 
                     movies={nowPlayingMovies} 
                     title={'Now Playing'} 
-                    // isVertical
                 />
 
                 <MoviesCarousel 

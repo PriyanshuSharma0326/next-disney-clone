@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ThemeToggler } from '@/components/ThemeToggler';
 import SearchInput from "./SearchInput";
 import GenreDropdown from "./GenreDropdown";
 
@@ -13,7 +12,7 @@ function Header() {
                     alt='' 
                     width={120} 
                     height={100} 
-                    className='cursor-pointer dark:invert' 
+                    className='cursor-pointer invert' 
                 />
             </Link>
 
@@ -22,7 +21,7 @@ function Header() {
 
                 <SearchInput />
 
-                <ThemeToggler />
+                {/* <ThemeToggler /> */}
             </div>
         </header>
     );
