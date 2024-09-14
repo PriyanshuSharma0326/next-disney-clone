@@ -13,14 +13,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body className='bg-white dark:bg-[#1A1C29]'>
+            <body className='bg-[#F5F5F5] dark:bg-[#1A1C29]'>
                 <ThemeProvider
                     attribute="class"
                     defaultTheme="system"
                     enableSystem
                     disableTransitionOnChange
                 >
-                    {/* <Header /> */}
+                    <Header />
                     {children}
                 </ThemeProvider>
             </body>

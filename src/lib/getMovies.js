@@ -66,3 +66,12 @@ export async function getSearchMovies(term) {
     const data = await fetchFromTMDB(url);
     return data.results;
 }
+
+export async function getMovie(id) {
+    const url = new URL(`https://api.themoviedb.org/3/movie/${id}`);
+
+    url.searchParams.set('include_video', 'true');
+
+    const data = await fetchFromTMDB(url);
+    return data;
+}

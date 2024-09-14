@@ -6,7 +6,7 @@ import GenreDropdown from "./GenreDropdown";
 
 function Header() {
     return (
-        <header className="fixed top-0 left-0 w-full z-20 p-5 bg-gradient-to-t from-gray-200/0 via-gray-900/25 to-gray-900 flex items-center justify-between">
+        <header style={{ zIndex: '100' }} className="fixed top-0 left-0 w-full p-5 bg-gradient-to-t from-gray-200/0 via-gray-900/25 to-gray-900 flex items-center justify-between">
             <Link href='/' className="mr-10">
                 <Image 
                     src='/a943ae.webp' 

@@ -4,7 +4,7 @@ import MovieCard from "./MovieCard";
 function MoviesCarousel({ movies, title, isVertical }) {
     return (
         <div className="z-50">
-            <h2 className="font-bold text-xl px-10 py-2">{title}</h2>
+            <h2 className="font-bold text-2xl italic px-10 py-2">{title}</h2>
 
             <div className={cn('flex gap-6 overflow-scroll px-5 lg:px-10 py-5 scrollbar-hide', isVertical && 'flex-col space-x-0 space-y-12')}>
                 {

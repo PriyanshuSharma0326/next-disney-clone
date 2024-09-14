@@ -10,9 +10,9 @@ async function Home() {
 
     return (
         <div>
-            {/* <CarouselBannerWrapper /> */}
+            <CarouselBannerWrapper />
 
-            <div className="flex flex-col gap-2 xl:mt-48">
+            <div className="flex flex-col gap-2 xl:mt-20">
                 <MoviesCarousel 
                     movies={nowPlayingMovies} 
                     title={'Now Playing'} 
